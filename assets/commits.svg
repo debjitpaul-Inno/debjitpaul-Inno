@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350" role="img" aria-label="Commits per project: DoctorCool 799, GOA 620, Rasry 287, Horizon Mini-ERP 225, BA-PMS 180, KaabaTrip 148, ZuTea 67, ZU ERP 31">
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: 700; fill: #7C3AED; }
+    .sub { font-size: 13px; fill: #8B949E; }
+    .label { font-size: 14px; font-weight: 600; fill: #8B949E; }
+    .count { font-size: 13px; font-weight: 700; fill: #8B949E; opacity: 0; animation: fade .4s ease-out forwards; }
+    .bar { transform-box: fill-box; transform-origin: left center; transform: scaleX(0); animation: grow 1s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes grow { to { transform: scaleX(1); } }
+    @keyframes fade { to { opacity: 1; } }
+  </style>
+
+  <text class="title" x="400" y="28" text-anchor="middle">Where my commits went</text>
+  <text class="sub" x="400" y="50" text-anchor="middle">2,357 commits · 8 codebases · 2023 → 2026</text>
+
+  <g transform="translate(0,72)">
+    <text class="label" x="160" y="16" text-anchor="end">DoctorCool</text>
+    <rect class="bar" x="175" y="0" width="520" height="22" rx="6" fill="#2563EB" style="animation-delay:.1s"/>
+    <text class="count" x="705" y="16" style="animation-delay:1s">799</text>
+  </g>
+  <g transform="translate(0,106)">
+    <text class="label" x="160" y="16" text-anchor="end">GOA</text>
+    <rect class="bar" x="175" y="0" width="404" height="22" rx="6" fill="#0EA5E9" style="animation-delay:.2s"/>
+    <text class="count" x="589" y="16" style="animation-delay:1.1s">620</text>
+  </g>
+  <g transform="translate(0,140)">
+    <text class="label" x="160" y="16" text-anchor="end">Rasry</text>
+    <rect class="bar" x="175" y="0" width="187" height="22" rx="6" fill="#22C55E" style="animation-delay:.3s"/>
+    <text class="count" x="372" y="16" style="animation-delay:1.2s">287</text>
+  </g>
+  <g transform="translate(0,174)">
+    <text class="label" x="160" y="16" text-anchor="end">Horizon Mini-ERP</text>
+    <rect class="bar" x="175" y="0" width="146" height="22" rx="6" fill="#F59E0B" style="animation-delay:.4s"/>
+    <text class="count" x="331" y="16" style="animation-delay:1.3s">225</text>
+  </g>
+  <g transform="translate(0,208)">
+    <text class="label" x="160" y="16" text-anchor="end">BA-PMS</text>
+    <rect class="bar" x="175" y="0" width="117" height="22" rx="6" fill="#EC4899" style="animation-delay:.5s"/>
+    <text class="count" x="302" y="16" style="animation-delay:1.4s">180</text>
+  </g>
+  <g transform="translate(0,242)">
+    <text class="label" x="160" y="16" text-anchor="end">KaabaTrip</text>
+    <rect class="bar" x="175" y="0" width="96" height="22" rx="6" fill="#7C3AED" style="animation-delay:.6s"/>
+    <text class="count" x="281" y="16" style="animation-delay:1.5s">148</text>
+  </g>
+  <g transform="translate(0,276)">
+    <text class="label" x="160" y="16" text-anchor="end">ZuTea</text>
+    <rect class="bar" x="175" y="0" width="44" height="22" rx="6" fill="#F472B6" style="animation-delay:.7s"/>
+    <text class="count" x="229" y="16" style="animation-delay:1.6s">67</text>
+  </g>
+  <g transform="translate(0,310)">
+    <text class="label" x="160" y="16" text-anchor="end">ZU ERP</text>
+    <rect class="bar" x="175" y="0" width="20" height="22" rx="6" fill="#6366F1" style="animation-delay:.8s"/>
+    <text class="count" x="205" y="16" style="animation-delay:1.7s">31</text>
+  </g>
+</svg>
