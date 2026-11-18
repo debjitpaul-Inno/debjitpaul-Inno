@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Debjit Paul, Software Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F05340">
+        <animate attributeName="stop-color" values="#F05340;#7C3AED;#2563EB;#F05340" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#2563EB;#F05340;#7C3AED" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#2563EB">
+        <animate attributeName="stop-color" values="#2563EB;#F05340;#7C3AED;#2563EB" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="1500 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <clipPath id="card"><rect width="1200" height="260" rx="14"/></clipPath>
+  </defs>
+
+  <style>
+    .name { font: 800 64px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; animation: rise 1s ease-out both; }
+    .role { font: 600 22px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #FFFFFF; opacity: .92; animation: rise 1s .35s ease-out both; }
+    .line { animation: grow 1.2s .7s ease-out both; transform-origin: 600px 0; }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="260" fill="url(#bg)"/>
+
+    <g fill="#FFFFFF">
+      <circle cx="120" cy="220" r="3" opacity="0"><animate attributeName="cy" values="230;40" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="260" cy="220" r="2" opacity="0"><animate attributeName="cy" values="230;60" dur="9s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.5;0" dur="9s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="430" cy="220" r="4" opacity="0"><animate attributeName="cy" values="230;30" dur="8s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.4;0" dur="8s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="780" cy="220" r="3" opacity="0"><animate attributeName="cy" values="230;50" dur="7.5s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.6;0" dur="7.5s" begin="3s" repeatCount="indefinite"/></circle>
+      <circle cx="940" cy="220" r="2" opacity="0"><animate attributeName="cy" values="230;40" dur="8.5s" begin=".5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.5;0" dur="8.5s" begin=".5s" repeatCount="indefinite"/></circle>
+      <circle cx="1090" cy="220" r="4" opacity="0"><animate attributeName="cy" values="230;60" dur="9.5s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.4;0" dur="9.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <text class="name" x="600" y="118" text-anchor="middle" fill="url(#shine)">Debjit Paul</text>
+    <rect class="line" x="520" y="138" width="160" height="4" rx="2" fill="#FFFFFF" opacity=".85"/>
+    <text class="role" x="600" y="178" text-anchor="middle">Software Engineer · Laravel · ERP and Payments</text>
+
+    <path fill="#FFFFFF" fill-opacity=".12" d="M0 215 Q150 190 300 215 T600 215 T900 215 T1200 215 T1500 215 T1800 215 T2100 215 T2400 215 V260 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#FFFFFF" fill-opacity=".18" d="M0 235 Q100 218 200 235 T400 235 T600 235 T800 235 T1000 235 T1200 235 T1400 235 T1600 235 T1800 235 T2000 235 T2200 235 T2400 235 V260 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="-1200 0" to="0 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
