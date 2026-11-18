@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="1000" height="250" role="img" aria-label="Journey 2023 to 2026: 2023 GOA platform; 2024 Horizon Mini-ERP and joined DoctorCool; 2025 DoctorCool core, KaabaTrip, Rasry, BA-PMS; 2026 DoctorCool payroll and HR, ZU ERP, ZuTea">
+  <defs>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="65%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+    .year { font-size: 22px; font-weight: 800; }
+    .head { font-size: 15px; font-weight: 700; }
+    .item { font-size: 13px; fill: #8B949E; }
+    .track { stroke-dasharray: 920; stroke-dashoffset: 920; animation: draw 2s ease-out forwards; }
+    .node { transform-box: fill-box; transform-origin: center; transform: scale(0); animation: pop .5s cubic-bezier(.3,1.6,.5,1) forwards; }
+    .card { opacity: 0; animation: rise .7s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes pop { to { transform: scale(1); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  </style>
+
+  <path class="track" d="M40 70 H960" stroke="url(#track)" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- 2023 -->
+  <g>
+    <circle cx="125" cy="70" r="10" fill="none" stroke="#0EA5E9" stroke-width="2">
+      <animate attributeName="r" values="10;20" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle class="node" cx="125" cy="70" r="10" fill="#0EA5E9" style="animation-delay:.3s"/>
+    <text class="year card" x="125" y="44" text-anchor="middle" fill="#0EA5E9" style="animation-delay:.3s">2023</text>
+    <g class="card" style="animation-delay:.6s">
+      <text class="head" x="125" y="112" text-anchor="middle" fill="#0EA5E9">GOA platform</text>
+      <text class="item" x="125" y="136" text-anchor="middle">Corporate secretarial</text>
+      <text class="item" x="125" y="158" text-anchor="middle">First large Laravel codebase</text>
+      <text class="item" x="125" y="180" text-anchor="middle">620 commits</text>
+    </g>
+  </g>
+
+  <!-- 2024 -->
+  <g>
+    <circle cx="375" cy="70" r="10" fill="none" stroke="#F59E0B" stroke-width="2">
+      <animate attributeName="r" values="10;20" dur="2s" begin="1.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;0" dur="2s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle class="node" cx="375" cy="70" r="10" fill="#F59E0B" style="animation-delay:.8s"/>
+    <text class="year card" x="375" y="44" text-anchor="middle" fill="#F59E0B" style="animation-delay:.8s">2024</text>
+    <g class="card" style="animation-delay:1.1s">
+      <text class="head" x="375" y="112" text-anchor="middle" fill="#F59E0B">Horizon Mini-ERP</text>
+      <text class="item" x="375" y="136" text-anchor="middle">Work orders, quotations</text>
+      <text class="item" x="375" y="158" text-anchor="middle">Joined DoctorCool (Aug)</text>
+    </g>
+  </g>
+
+  <!-- 2025 -->
+  <g>
+    <circle cx="625" cy="70" r="10" fill="none" stroke="#22C55E" stroke-width="2">
+      <animate attributeName="r" values="10;20" dur="2s" begin="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;0" dur="2s" begin="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle class="node" cx="625" cy="70" r="10" fill="#22C55E" style="animation-delay:1.3s"/>
+    <text class="year card" x="625" y="44" text-anchor="middle" fill="#22C55E" style="animation-delay:1.3s">2025</text>
+    <g class="card" style="animation-delay:1.6s">
+      <text class="head" x="625" y="112" text-anchor="middle" fill="#22C55E">DoctorCool core</text>
+      <text class="item" x="625" y="136" text-anchor="middle">Contracts, payments, audit</text>
+      <text class="item" x="625" y="158" text-anchor="middle">KaabaTrip travel B2B</text>
+      <text class="item" x="625" y="180" text-anchor="middle">Rasry e-commerce API</text>
+      <text class="item" x="625" y="202" text-anchor="middle">BA-PMS construction PM</text>
+    </g>
+  </g>
+
+  <!-- 2026 -->
+  <g>
+    <circle cx="875" cy="70" r="10" fill="none" stroke="#EC4899" stroke-width="2">
+      <animate attributeName="r" values="10;20" dur="2s" begin="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;0" dur="2s" begin="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle class="node" cx="875" cy="70" r="10" fill="#EC4899" style="animation-delay:1.8s"/>
+    <text class="year card" x="875" y="44" text-anchor="middle" fill="#EC4899" style="animation-delay:1.8s">2026</text>
+    <g class="card" style="animation-delay:2.1s">
+      <text class="head" x="875" y="112" text-anchor="middle" fill="#EC4899">DoctorCool payroll &amp; HR</text>
+      <text class="item" x="875" y="136" text-anchor="middle">ZU ERP microservices</text>
+      <text class="item" x="875" y="158" text-anchor="middle">ZuTea AI ordering + KDS</text>
+    </g>
+  </g>
+</svg>
